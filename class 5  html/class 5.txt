@@ -1,0 +1,147 @@
+
+1. What is semantic tags , why we use semantic tags , what is the main purpose of using semantic tags 
+2. What is container, why we use container, container is a class or tag ? , What is the purpose of using container 
+3. What is row and columns , why we use it ?
+4. What is button? , it is a type , class or tag ? What is the purpose of using button ? 
+5. What is form and its all types ( including input , label , type , name , I'd , placeholder) why we use forms ? 
+6. What is CSS?
+7. What is the main purpose of using css ? 
+8. Why we use CSS3?
+9. How many types of css are there ? 
+10. If we apply all these 3 css on our selector so which one should work first ?
+
+Here's an overview of semantic HTML tags, container, rows, columns, and buttons:
+
+Semantic HTML Tags:
+
+1. header: Defines the header section of a document or section.
+2. nav: Defines a set of navigation links.
+3. main: Defines the main content section of a document.
+4. section: Defines a self-contained section of related content.
+5. article: Defines an independent piece of content, such as a blog post or news article.
+6. aside: Defines content related to the main content, such as a sidebar.
+7. footer: Defines the footer section of a document or section.
+8. figure: Defines a self-contained piece of content, such as an image or chart.
+9. figcaption: Defines the caption for a figure element.
+
+Container:
+
+1. div: A generic container element for grouping other elements.
+
+Rows and Columns:
+
+1. table: Defines a table for displaying data in rows and columns.
+2. tr: Defines a table row.
+3. td: Defines a table cell (column).
+4. grid: Defines a grid container for creating responsive layouts.
+5. flexbox: Defines a flexible container for creating responsive layouts.
+
+Buttons:
+
+1. button: Defines a clickable button.
+2. input type="button": Defines a button input field.
+3. input type="submit": Defines a submit button for forms.
+4. input type="reset": Defines a reset button for forms.
+5. a: Can be used as a button with CSS styling.
+
+Note: This is not an exhaustive list, but it covers the most commonly used semantic HTML tags, containers, rows, columns, and buttons.
+
+Here's an example of using some of these tags:
+```
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Welcome to our website</h1>
+    <p>This is some sample content.</p>
+  </section>
+  <aside>
+    <h2>Related content</h2>
+    <p>This is some related content.</p>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2023 Our website</p>
+</footer>
+
+<table>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table>
+
+<button>Click me!</button>
+<input type="button" value="Click me!">
+<a href="#" class="button">Click me!</a>
+
+CSS (Cascading Style Sheets) is a styling language used to control the layout and appearance of web pages written in HTML or XML. It's used to separate presentation from structure, making it easier to maintain and update websites.
+
+CSS defines:
+
+- Layout: positioning, sizing, and spacing of elements
+- Visual styling: colors, fonts, textures, and images
+- User experience: interactions, animations, and transitions
+
+CSS consists of:
+
+- Selectors: target specific HTML elements
+- Properties: define styles for selected elements
+- Values: specify the style values for properties
+
+Example: p { color: blue; }
+
+- p is the selector (targets paragraph elements)
+- color is the property (defines text color)
+- blue is the value (specifies the color)
+
+CSS makes web pages visually appealing, user-friendly, and responsive.
+
+Here's a breakdown of the differences between class, ID, type, and universal selectors in CSS, along with examples:
+
+Class Selector
+
+- Syntax: .className
+- Selects all elements with the specified class attribute
+- Example: .header { color: blue; }
+    - Selects all elements with class="header"
+
+ID Selector
+
+- Syntax: #idName
+- Selects a single element with the specified ID attribute
+- Example: #logo { width: 100px; }
+    - Selects the element with id="logo"
+
+Type Selector
+
+- Syntax: elementType
+- Selects all elements of the specified type
+- Example: p { font-size: 18px; }
+    - Selects all <p> elements
+
+Universal Selector
+
+- Syntax: *
+- Selects all elements on the page
+- Example: * { margin: 0; padding: 0; }
+    - Selects all elements and applies the styles
+
+Note:
+
+- You can combine selectors to target specific elements. For example: .header p { color: red; }
+- IDs should be unique, while classes can be reused.
+- Type selectors are useful for styling all elements of a specific type, but can be overridden by more specific selectors.
+- The universal selector is useful for applying global styles, but can have performance implications due to its broad scope.
